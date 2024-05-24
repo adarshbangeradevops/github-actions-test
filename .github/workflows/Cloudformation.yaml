@@ -1,6 +1,6 @@
 on:
  push:
- work_dispatch:
+ workflow_dispatch:
 
 jobs:
  cloudformationdeployent:
