@@ -11,3 +11,4 @@ jobs:
      with:
           role-to-assume: arn:aws:iam::851725476509:role/github-action-role-vpc
           role-session-name: samplerolesession
+          aws-region: us-east-1
