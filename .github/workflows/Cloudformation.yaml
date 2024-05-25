@@ -6,9 +6,8 @@ jobs:
  cloudformationdeployent:
    runs-on: ubuntu:latest
    steps:
-    - name: Configure AWS Credentials
-      uses: aws-actions/configure-aws-credentials@v4
-      with:
-        aws-region: us-east-2
-        role-to-assume: arn:aws:iam::851725476509:role/github-action-role-vpc
-        role-session-name: MySessionName
+   - name: configure aws credentials
+        uses: aws-actions/configure-aws-credentials@v3
+        with:
+          role-to-assume: arn:aws:iam::851725476509:role/github-action-role-vpc
+          role-session-name: samplerolesession
